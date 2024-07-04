@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Azul claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007BFF; /* Azul mais escuro */
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Maior espaço entre os links */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #0056b3; /* Azul ainda mais escuro */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #007BFF; /* Azul mais escuro */
+}
+
+.branch-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.branch {
+    background-color: #fff;
+    border: 1px solid #007BFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+}
+
+.branch img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.branch h2 {
+    font-size: 1.2em;
+    color: #007BFF;
+}
+
+.branch p {
+    color: #666;
+}
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

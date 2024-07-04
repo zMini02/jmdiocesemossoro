@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #1000a3;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #022972;
+}
+
+main {
+    padding: 20px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.news-item {
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+}
+
+.news-item h2 {
+    color: #1e90ff;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.news-item p {
+    padding: 0 15px 15px;
+    text-align: center;
+}
+
+.large {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+@media(min-width: 768px) {
+    .news-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .large {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+
+    .medium {
+        grid-column: span 1;
+    }
+}
+
+@media(min-width: 1024px) {
+    .news-grid {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .large {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+
+    .medium {
+        grid-column: span 1;
+    }
+}
+
+.news-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+    background-color: #001486;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}

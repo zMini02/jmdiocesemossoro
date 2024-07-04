@@ -1,0 +1,99 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Azul claro */
+    color: #333; /* Cor de texto padrão */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o conteúdo ocupe pelo menos toda a altura da viewport */
+}
+
+header {
+    background-color: #1e90ff; /* Azul */
+    color: white; /* Texto branco */
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    flex: 1; /* Faz com que o conteúdo principal ocupe todo o espaço restante */
+    padding: 20px;
+}
+
+#video-block {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%; /* Garante que o vídeo ocupe toda a largura disponível */
+    padding-top: 56.25%; /* Proporção 16:9 para o vídeo responsivo */
+    overflow: hidden; /* Garante que o vídeo não vaze para fora do contêiner */
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#video-block button {
+    background-color: #1e90ff; /* Azul */
+    color: white; /* Texto branco */
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    position: relative; /* Manter a posição relativa para ajustar o z-index */
+    z-index: 1; /* Garantir que o botão esteja sobre o vídeo */
+}
+
+#video-block button:hover {
+    background-color: #1c86ee; /* Azul mais escuro */
+}
+
+footer {
+    background-color: #1e90ff; /* Azul */
+    color: white; /* Texto branco */
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed; /* Fixa o rodapé na parte inferior da janela */
+    bottom: 0;
+}
+/* Seção de Vídeo */
+.video-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 315px;
+}
